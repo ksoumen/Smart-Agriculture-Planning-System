@@ -180,12 +180,12 @@ By combining historical data, environmental parameters, and real-time prediction
 ## 👥 Project Team
 
 **Name**	**Role**
-**Soumen Karmakar**	Data Collection, Dataset Analysis & Preprocessing
-**Sourish Saha**	Model Development & Streamlit UI
-**Niladri Biswas**	Testing & Integration
-**Ujjal Samanta**	Documentation & Evaluation
-**Sakshi Kahar**	Research & Reporting
-**Guide:** Dr. Dilip Kumar Maity	Academy of Technology, CSBS Department
+- **Soumen Karmakar**	Data Collection, Dataset Analysis & Preprocessing
+- **Sourish Saha**	Model Development & Streamlit UI
+- **Niladri Biswas**	Testing & Integration
+- **Ujjal Samanta**	Documentation & Evaluation
+- **Sakshi Kahar**	Research & Reporting
+- **Guide:** Dr. Dilip Kumar Maity	Academy of Technology, CSBS Department
 
 ## 📚 References
 
