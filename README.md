@@ -3,57 +3,97 @@
 
 Academy of Technology, Hooghly
 Under the guidance of: Dr. Dilip Kumar Maity
-Team Members:
 
-Sourish Saha
+📘 Developed By:
 
-Soumen Karmakar
+Soumen Karmakar (Data Collection, Dataset Analysis & Preprocessing)
 
-Niladri Biswas
+Sourish Saha (Model Development & Streamlit App)
 
-Ujjal Samanta
+Niladri Biswas (Testing & Integration)
 
-Sakshi Kahar
+Ujjal Samanta (Documentation & Research)
 
-📘 Project Overview
+Sakshi Kahar (Report Compilation)
 
-Farming is a delicate balance of resources, environment, and market conditions.
-This project introduces a Machine Learning–powered Precision Farming System that helps farmers make data-driven decisions for fertilizer and pesticide use, crop recommendation, and profit prediction.
+📖 Project Overview
 
-The system uses supervised learning models and an interactive Streamlit web app to provide instant insights for better resource and profit optimization.
+Farming today faces the challenge of balancing resource efficiency and profitability amidst changing environmental conditions.
+Our project, “Precision Farming System for Resource and Profit Optimization”, uses Machine Learning to help farmers make data-driven decisions on:
+
+How much fertilizer and pesticide to use
+
+Which crop to plant based on soil and climate
+
+What yield and profit to expect
+
+The system integrates trained ML models into an easy-to-use Streamlit web interface, offering personalized recommendations and profit projections.
 
 🔗 Live Demo: farm-prediction-model.streamlit.app
 
 📂 Source Code: GitHub Repository
 
-🚀 Features
+🚀 Key Features
 
-🌱 Fertilizer & Pesticide Prediction — Predicts required quantities using regression models.
+🌱 Predicts fertilizer and pesticide requirements
 
-🌾 Crop Recommendation — Suggests the most suitable crop based on soil and climate.
+🌾 Suggests optimal crops for given soil and weather
 
-💰 Profit Estimation — Calculates expected yield, cost, and net profit.
+💰 Estimates yield, cost, and profit in real-time
 
-🧠 Multi-Model ML Approach — Uses Random Forest, Gradient Boosting, KNN, and SVM.
+📊 Provides data-driven insights for resource management
 
-🧮 Financial Calculator — Converts predictions into real-world financial insights.
+💻 Offers a Streamlit-based user interface accessible to all farmers
 
-💻 User-Friendly Interface — Built with Streamlit for simplicity and accessibility.
+⚡ Uses ensemble ML models (Random Forest, Gradient Boosting, KNN, SVM) for accuracy
 
-🧬 Machine Learning Models Used
+🧠 Machine Learning Models Used
 Task	Algorithm	Metric	Performance
 Fertilizer Prediction	Random Forest Regressor	RMSE	~8.25
-Pesticide Prediction	Gradient Boosting	RMSE	~8.50
+Pesticide Prediction	Gradient Boosting Regressor	RMSE	~8.50
 Yield Prediction	Random Forest	RMSE	~8.25
 Crop Recommendation	SVM / KNN Classifier	Accuracy	97.6%
-📊 System Architecture
+🧬 Datasets Used
+Dataset 1 – Agriculture Resource Optimization
+
+Records: 1,450
+
+Features: Crop Type, Season, Soil Type, N, P, K, pH, Temperature, Humidity, Rainfall
+
+Targets: Fertilizer Used (tons), Pesticide Used (kg), Yield (tons)
+
+Source: Aggregated from agricultural data repositories and government sources
+
+Dataset 2 – Crop Recommendation Dataset
+
+Records: 2,550
+
+Features: N, P, K, Temperature, Humidity, pH, Rainfall
+
+Target: Crop Type (29 classes — cereals, pulses, fruits, cash crops)
+
+🧩 Your Role:
+You handled data collection, preprocessing, and analysis, ensuring:
+
+Removal of inconsistencies and missing values
+
+Label encoding of categorical variables
+
+Feature engineering (NPK ratio, temperature-humidity index)
+
+Exploratory data analysis (EDA) and correlation study
+
+⚙️ System Workflow
+Data Collection → Preprocessing → Model Training → Evaluation → Streamlit Integration → Prediction & Profit Analysis
+
+Architecture Diagram
 +---------------------------+
 |   User Input (Streamlit)  |
 +---------------------------+
            |
            v
 +---------------------------+
-|  Preprocessing & Encoding |
+|  Data Preprocessing Layer |
 +---------------------------+
            |
            v
@@ -64,27 +104,8 @@ Crop Recommendation	SVM / KNN Classifier	Accuracy	97.6%
            |
            v
 +---------------------------+
-|   Profit & Yield Outputs  |
+|   Yield & Profit Output   |
 +---------------------------+
-
-🧠 Datasets Used
-Dataset 1 – Agriculture Resource Optimization
-
-Records: 1,450
-
-Features: Soil nutrients (N, P, K), pH, temperature, humidity, rainfall, etc.
-
-Targets: Fertilizer_Used, Pesticide_Used, Yield
-
-Dataset 2 – Crop Recommendation Dataset
-
-Records: 2,550
-
-Features: N, P, K, Temperature, Humidity, pH, Rainfall
-
-Target: Crop Type (29 classes)
-
-Both datasets were cleaned, encoded, and scaled for model training using Scikit-learn.
 
 🧰 Technologies Used
 Category	Tools / Libraries
@@ -92,14 +113,14 @@ Programming Language	Python 3.8+
 Frontend / UI	Streamlit
 ML Libraries	Pandas, NumPy, Scikit-Learn
 Visualization	Matplotlib, Seaborn
-Hosting	Streamlit Cloud
+Deployment	Streamlit Cloud
 Version Control	Git & GitHub
-⚙️ Installation & Setup
+💻 Installation & Setup
 # Clone the repository
-git clone https://github.com/sahaSourish/Prediction_model.git
+git clone https://github.com/ksoumen/Precision-Farming-System.git
 
-# Navigate to project directory
-cd Prediction_model
+# Navigate into the project directory
+cd Precision-Farming-System
 
 # Install dependencies
 pip install -r requirements.txt
@@ -108,15 +129,18 @@ pip install -r requirements.txt
 streamlit run app.py
 
 
-Then open the local URL displayed in your terminal (usually http://localhost:8501/).
+Then visit http://localhost:8501/
+ in your browser.
 
-💻 Example Prediction
+🧮 Example Prediction
 
 Input Example:
 
 Crop: Tomato
 
-Soil: Loamy
+Soil Type: Loamy
+
+Season: Zaid
 
 N=45, P=38, K=42
 
@@ -124,11 +148,11 @@ Temp=27°C, Humidity=70%, Rainfall=110mm
 
 Prices: Fertilizer ₹25/kg, Pesticide ₹40/kg, Crop ₹20/kg
 
-Output Example:
+Predicted Output:
 
-Fertilizer Needed: 5.38 tons
+Fertilizer Required: 5.38 tons
 
-Pesticide Needed: 2.71 kg
+Pesticide Required: 2.71 kg
 
 Predicted Yield: 40.39 tons
 
@@ -136,39 +160,56 @@ Estimated Profit: ₹6,73,000
 
 📈 Results Summary
 
-Random Forest achieved an RMSE of 8.25 for yield prediction.
+Random Forest Regressor: RMSE ≈ 8.25
 
-Crop recommendation model achieved 97%+ accuracy.
+Gradient Boosting: Accuracy up to 99%
 
-Demonstrated significant potential for input cost reduction and profit increase.
+SVM Classifier: Accuracy 97.6%
+
+Demonstrated potential for input cost savings and yield optimization
+
+🖼️ Project Preview
+Input Page	Results Page
+
+	
+
+(Add screenshots from your Streamlit app under assets/ folder)
 
 🔮 Future Enhancements
 
-Real-time integration with weather APIs and IoT sensors.
+🌦️ Integrate real-time weather and soil sensor APIs
 
-Add LSTM-based time-series forecasting for seasonal yield trends.
+🛰️ Add satellite & geospatial data for land analysis
 
-Mobile app version for Android/iOS.
+📱 Develop mobile version (Android/iOS)
 
-Incorporate geospatial & satellite data for land mapping.
+🧩 Introduce LSTM-based seasonal forecasting
 
-Support regional languages for broader adoption.
+🗣️ Support for regional languages for local farmers
 
 🏁 Conclusion
 
-This project demonstrates how machine learning and data-driven intelligence can revolutionize agriculture.
-By predicting inputs, yield, and profitability, the system bridges the gap between traditional farming and smart precision agriculture — making farming more sustainable and profitable.
+This project demonstrates how machine learning and agricultural data analytics can revolutionize modern farming.
+By combining historical data, environmental parameters, and real-time predictions, the system enables precision farming that improves yield, reduces costs, and supports sustainable agriculture.
 
-📜 References
+👥 Project Team
+Name	Role
+Soumen Karmakar	Data Collection, Dataset Analysis & Preprocessing
+Sourish Saha	Model Development & Streamlit UI
+Niladri Biswas	Testing & Integration
+Ujjal Samanta	Documentation & Evaluation
+Sakshi Kahar	Research & Reporting
+Guide: Dr. Dilip Kumar Maity	Academy of Technology, CSBS Dept.
+📚 References
 
-Afzal H. et al., Incorporating Soil Information with Machine Learning for Crop Recommendation, Scientific Reports, 2025.
+H. Afzal et al., “Incorporating Soil Information with Machine Learning for Crop Recommendation,” Scientific Reports, 2025.
 
-Jabed M.A. et al., Crop Yield Prediction in Agriculture: A Review of ML & DL Approaches, Heliyon, 2024.
+Md. A. Jabed, M. A. A. Murad, “Crop Yield Prediction in Agriculture,” Heliyon, 2024.
 
-Iniyan S., Jebakumar R., Smart Mobile Application for Crop Yield Prediction, JMM, 2022.
+S. Iniyan, R. Jebakumar, “Smart Mobile App for Crop Yield Prediction,” JMM, 2022.
 
-Gosai D. et al., Crop Recommendation System using ML, 2021.
+D. Gosai et al., “Crop Recommendation System using Machine Learning,” Academia.edu, 2021.
 
-Streamlit Documentation – docs.streamlit.io
+Streamlit Documentation
 
-Scikit-Learn Documentation – scikit-learn.org
+Scikit-Learn Documentation
