@@ -80,6 +80,7 @@ You handled **data collection, preprocessing, and analysis**, ensuring:
 Data Collection → Preprocessing → Model Training → Evaluation → Streamlit Integration → Prediction & Profit Analysis
 
 ### 🧩 Architecture Diagram
+```
 +---------------------------+
 | User Input (Streamlit) |
 +---------------------------+
@@ -100,8 +101,7 @@ v
 | Yield & Profit Output |
 +---------------------------+
 
-
----
+```
 
 ## 🧰 Technologies Used
 
