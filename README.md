@@ -134,83 +134,15 @@ streamlit run app.py
 Then open the local server (usually http://localhost:8501
 ) in your browser.
 
-🧮 Example Prediction
-Input Example:
+---
+```
 
+## 🧮 Example Prediction
+**Input Example:**
 Crop: Tomato
-
 Soil Type: Loamy
-
 Season: Zaid
-
 N = 45, P = 38, K = 42
-
 Temperature = 27°C, Humidity = 70%, Rainfall = 110mm
-
 Prices: Fertilizer ₹25/kg, Pesticide ₹40/kg, Crop ₹20/kg
 
-Predicted Output:
-
-Fertilizer Required: 5.38 tons
-
-Pesticide Required: 2.71 kg
-
-Predicted Yield: 40.39 tons
-
-Estimated Profit: ₹6,73,000
-
-📈 Results Summary
-
-Random Forest Regressor: RMSE ≈ 8.25
-
-Gradient Boosting: Accuracy up to 99%
-
-SVM Classifier: Accuracy 97.6%
-
-Demonstrated potential for input cost savings and yield optimization
-
-🖼️ Project Preview
-Input Page	Results Page
-
-	
-
-(Add screenshots from your Streamlit app in the assets/ folder)
-
-🔮 Future Enhancements
-
-🌦️ Integrate real-time weather and soil sensor APIs
-
-🛰️ Add satellite & geospatial data for land analysis
-
-📱 Develop mobile version (Android/iOS)
-
-🧩 Introduce LSTM-based seasonal forecasting
-
-🗣️ Support for regional languages for local farmers
-
-🏁 Conclusion
-
-This project demonstrates how machine learning and agricultural data analytics can revolutionize modern farming.
-By combining historical data, environmental parameters, and real-time predictions, the system enables precision farming that improves yield, reduces costs, and promotes sustainable agriculture.
-
-👥 Project Team
-Name	Role
-Soumen Karmakar	Data Collection, Dataset Analysis & Preprocessing
-Sourish Saha	Model Development & Streamlit UI
-Niladri Biswas	Testing & Integration
-Ujjal Samanta	Documentation & Evaluation
-Sakshi Kahar	Research & Reporting
-Guide: Dr. Dilip Kumar Maity	Academy of Technology, CSBS Department
-📚 References
-
-H. Afzal et al., “Incorporating Soil Information with Machine Learning for Crop Recommendation,” Scientific Reports, 2025.
-
-Md. A. Jabed, M. A. A. Murad, “Crop Yield Prediction in Agriculture,” Heliyon, 2024.
-
-S. Iniyan, R. Jebakumar, “Smart Mobile App for Crop Yield Prediction,” JMM, 2022.
-
-D. Gosai et al., “Crop Recommendation System using Machine Learning,” Academia.edu, 2021.
-
-Streamlit Documentation
-
-Scikit-Learn Documentation
