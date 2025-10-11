@@ -138,11 +138,12 @@ Then open the local server (usually http://localhost:8501
 ```
 
 ## 🧮 Example Prediction
+
 **Input Example:**
-Crop: Tomato
-Soil Type: Loamy
-Season: Zaid
-N = 45, P = 38, K = 42
-Temperature = 27°C, Humidity = 70%, Rainfall = 110mm
-Prices: Fertilizer ₹25/kg, Pesticide ₹40/kg, Crop ₹20/kg
+- Crop: Tomato
+- Soil Type: Loamy
+- Season: Zaid
+- N = 45, P = 38, K = 42
+- Temperature = 27°C, Humidity = 70%, Rainfall = 110mm
+- Prices: Fertilizer ₹25/kg, Pesticide ₹40/kg, Crop ₹20/kg
 
